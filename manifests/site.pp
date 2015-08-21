@@ -3,9 +3,6 @@ node 'kurias-cp.linuxmaster.com' {
 }
 
 node 'vm01.linuxmaster.com' {
-    file {'/tmp/testserver':
-        content => "This is a test server.\n",
-    }
     include sshd
     include vim_upgrade
     
